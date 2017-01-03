@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> 
+            </script>
+         
+         <style>
+             #redball{
+                 position:absolute;
+             }
+         </style>
+            
+         <script>
+            function pfadeOut(){
+                var myparagraph=$("#gt");
+                myparagraph.fadeOut();
+            }
+            
+            function pfadeIn(){
+                var myparagraph=$("#gt");
+                myparagraph.fadeIn();
+            }
+            
+                     
+        </script>
+        
+               
+        <script> 
+            function left() {
+                var ball = $("#redball");
+                ball.animate({"left":"-=100"}, 500, "linear");
+            }
+            
+            function right() {
+                var ball = $("#redball");
+                ball.animate({"left":"+=50"}, 500, "linear");
+            }
+            
+            function up() {
+                var ball = $("#redball");
+                ball.animate({"top":"-=50"}, 500, "linear");
+            }
+            
+            function down() {
+                var ball = $("#redball");
+                ball.animate({"top":"+=50"}, 500, "linear");
+            }
+            
+            function uleft() {
+                var ball = $("#redball");
+                ball.animate({"top":"-=50", "left":"-=100"}, 500, "linear");
+            }
+            
+            function uright() {
+                var ball = $("#redball");
+                ball.animate({"top":"-=50", "left":"+=100"}, 1000, "linear");
+            }
+            
+            function dleft() {
+                var ball = $("#redball");
+                ball.animate({"top":"+=50", "left":"-=100"}, 500, "linear");
+            }
+            
+            function dright() {
+                var ball = $("#redball");
+                ball.animate({"top":"+=50", "left":"+=100"}, 500, "linear");
+            }
+            
+            function square() {
+                var ball = $("#redball");
+                ball.animate({"left":"+=75"}, 750, "linear");
+                ball.animate({"top":"-=75"}, 750, "linear");
+                ball.animate({"left":"-=75"}, 750, "linear");
+                ball.animate({"top":"+=75"}, 750, "linear");
+            
+            }
+            
+            function triangle() {
+                var ball = $("#redball");
+                ball.animate({"left":"+=100"}, 700, "linear");
+                ball.animate({"left":"-=50","top":"-=50"}, 750, "linear");
+                ball.animate({"left":"-=50","top":"+=50"}, 750, "linear");
+            }
+            
+            function octagon() {
+                
+                var ball = $("#redball");
+                ball.animate({"left":"+=50"}, 100, "linear");
+                ball.animate({"left":"+=25", "top":"-=25"}, 100, "linear");
+                ball.animate({"top":"-=50"}, 100, "linear");
+                ball.animate({"top":"-=25", "left":"-=25"}, 100, "linear");
+                ball.animate({"left":"-=50"}, 100, "linear");
+                ball.animate({"left":"-=25", "top":"+=25"}, 100, "linear");
+                ball.animate({"top":"+=50"}, 100, "linear");
+                ball.animate({"top":"+=25", "left":"+=25"}, 100, "linear");
+            }
+        
+        </script>
+        
+  
+        
+    </head>
+            <body>
+                
+                    <p id="gt">
+                        My first Paragraph
+                    </p>
+                
+                    <p>
+                        My Second Paragraph
+                    </p>
+            
+                    <p>
+                        <button onclick="pfadeOut()">Fade Out</button>
+                        
+                        <button onclick="pfadeIn()">Fade In</button>
+                        
+                        <button onclick="square()">SQUARE</button>
+                    </p>
+                    
+                     <p>
+                         <button onclick="left()">Left</button>
+                     
+                     
+                         <button onclick="right()">Right</button>
+                     </p>
+                     
+                     <p>
+                         <button onclick="up()">Up</button>
+                         
+                         <button onclick="down()">Down</button>
+                         
+                         <button onclick="triangle()">TRIANGLE</button>
+                     </p>
+                     
+                     <p>
+                         <button onclick="uleft()">U.Left</button>
+                         
+                         <button onclick="uright()">U.Right</button>
+                     </p>
+                     
+                     <p>
+                         <button onclick="dleft()">D.Left</button>
+                         
+                         <button onclick="dright()">D.Right</button>
+                     
+                         <button onclick="octagon()">OCTAGON</button>
+                     </p>
+            
+        
+         <img style="position:absolute; TOP:200px; LEFT: 210px" id="redball" src="http://storage.googleapis.com/ics-redball/redball.jpg"></img>               
+            </body>
+</html>
