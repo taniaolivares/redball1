@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> 
+            </script>
+         
+         <style>
+             #redball{
+                 position:absolute;
+             }
+         </style>
+            
+         <script>
+            function pfadeOut(){
+                var myparagraph=$("#gt");
+                myparagraph.fadeOut();
+            }
+            
+            function pfadeIn(){
+                var myparagraph=$("#gt");
+                myparagraph.fadeIn();
+            }
+            
+                     
+        </script>    
+        
+    </head>
+            <body>
+                
+            <p id="gt">
+                My first Paragraph
+            </p>
+                
+            <p>
+                My Second Paragraph
+            </p>
+            
+            <p>
+                <button onclick="pfadeOut()">Fade Out</button>
+                <button onclick="pfadeIn()">Fade In</button>
+            </p>
+            
+            
+        <img id="redball" src="http://storage.googleapis.com/ics-redball/redball.jpg"></img>
+        <button onclick="sayhello()">hello worlds</button>
+        <button onclick="moveright()">move right</button>
+        <button onclick="moveleft()">move left</button>
+        <button onclick="moveup()">move up</button>
+        <button onclick="movedown()">move down</button>
+        <button onclick="moveupright()">Move Up Right</button>
+        <button onclick="movedownright()">move down right</button>
+        <button onclick="movedownleft()">move down left</button>
+        <button onclick="movesquare()">move square</button>
+        <button onclick="octagon()">octagon</button>
+        <button onclick="moveupleft()">move up left</button>
+        <button onclick="triangle()">Triangle</button>
+            
+            </body>
+</html>
